@@ -1,0 +1,1 @@
+ /Users/mac/Flutter/Flutter_Tutorial/ft_native/.dart_tool/flutter_build/62b8a6bf713915486771400b5c12a70d/native_assets.yaml: 
