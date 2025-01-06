@@ -27,6 +27,7 @@ class MyHomePage extends StatefulWidget {
 
   final String title;
 
+
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
@@ -47,20 +48,27 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(
-        // child: Column(
-        // mainAxisAlignment: MainAxisAlignment.center,
-        // children: <Widget>[
-        // const Text(
-        //   'You have pushed the button this many times:',
-        // ),
-        // Text(
-        //   '$_counter',
-        //   style: Theme.of(context).textTheme.headlineMedium,
-        // ),
-        child: NativeViewExample(),
-        //   ],
-        // ),
+      body:  Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment:  CrossAxisAlignment.start,
+        children: [
+          Container(
+            margin: const EdgeInsets.all(10.0),
+            color: Colors.amber[600],
+            width: 48.0,
+            height: 48.0),
+           Container(
+             // constraints: BoxConstraints.expand(
+             //   height: Theme.of(context).textTheme.headlineMedium!.fontSize! * 1.1 + 200.0,
+             // ),
+           padding: const EdgeInsets.all(8.0),
+           color: Colors.blue[600],
+           alignment: Alignment.center,
+           height: 80.0,
+           child: const NativeViewExample(),
+          //   ],
+          // ),
+        )],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
