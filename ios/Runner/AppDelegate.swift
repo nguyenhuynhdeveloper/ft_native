@@ -26,7 +26,7 @@ import Flutter
 
       
       
-      GeneratedPluginRegistrant.register(withRegistry: self)
+      GeneratedPluginRegistrant.register(with: self)
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
     
