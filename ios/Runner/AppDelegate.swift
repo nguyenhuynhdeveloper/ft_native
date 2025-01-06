@@ -12,7 +12,7 @@ import UIKit
 
       
       
-      GeneratedPluginRegistrant.register(withRegistry: self)
+      GeneratedPluginRegistrant.register(with: self)
       
       // -------
       weak var registrar = self.registrar(forPlugin: "plugin-name")
